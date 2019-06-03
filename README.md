@@ -1,5 +1,10 @@
+SETUP:
+--------------
+1: Clone repo <br />
+2: Run npm install <br />
+3: Add environment variables for email, server, and plex server details
+
 TODO:
 --------------
 1: Fill out readme <br />
-2: Finish formatting mutliple sessions data object <br />
-3: Have run on actual server <br />
+2: Have run on actual server <br />
