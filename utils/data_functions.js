@@ -40,18 +40,10 @@ module.exports = {
                             Player: vid.Player.product
                         })
             });
-            return JSON.stringify(formatted_response);
+            let txt = `Sessions: ${formatted_response.Sessions} \n Playing: ${formatted_response.playing.map( e => {
+            return '\n' + 'Show: '+ e.Show + '\n' + 'Title: ' + e.Title + '\n' + 'User: ' + e.User + '\n' + 'Player: ' + e.Player + '\n' + '-------------------'}
+                )}`;
+            return txt;
         }
     }
 }
-
-
-//     response.MediaContainer.Video.map( vid => {
-//         data['playing'].push( {
-//             show: vid.grandparentTitle || vid.parentTitle || vid.title,
-//             title: vid.title,
-//             user: vid.User.title,
-//             player: vid.Player.product
-//         } )
-//     })
-// }
