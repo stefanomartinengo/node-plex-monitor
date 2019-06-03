@@ -8,3 +8,4 @@ TODO:
 --------------
 1: Fill out readme <br />
 2: Have run on actual server <br />
+3: Feedback and responses for manually hitting endpoint <br />
