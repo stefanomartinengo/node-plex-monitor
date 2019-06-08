@@ -17,6 +17,7 @@ const transporter = nodemailer.createTransport({
 module.exports = {
     sendMail: async (formatted_result) => {
         mailOptions.text = formatted_result;
+        mailOptions.subject = (formatted_result.split('\n')[2]).substr(7) + 'is watching...';
     let email_sent = await transporter.sendMail(mailOptions, function(error, info){
         if (error) {
             console.log(error);

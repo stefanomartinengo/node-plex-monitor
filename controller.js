@@ -16,15 +16,14 @@ module.exports = {
 					let parsed_response = dataService.parse_xml(response_text);
 					let formatted_response = dataService.format_response(parsed_response);
 					if(!formatted_response) {
+						// NO EMAIL SENT
 						console.log('Nothing playing')
 						return;
 					} else {
 						let sendMail = await emailService.sendMail(formatted_response);
-						console.log(sendMail, 'sendMail')
 						if(sendMail) {
 							console.log('mail sent')
 						}
-						// hit email function?
 					}
 					res.send({
 						success: true,
