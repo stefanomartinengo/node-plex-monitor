@@ -6,5 +6,6 @@ SETUP:
 
 TODO:
 --------------
-1: More details on readme <br />
-2: Add title image to email details <br />
+1: Add trigger on unauthorized response to make new post request to notify that a new token needs <br/> to be fetched <br/>
+2: More details on readme <br />
+3: Add title image to email details <br />
